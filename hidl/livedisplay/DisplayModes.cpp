@@ -33,7 +33,6 @@ static constexpr const char* kDefaultPath = "/data/misc/display/.displaymodedefa
 #else
 static constexpr const char* kDefaultPath = "/data/vendor/display/.displaymodedefault";
 #endif 
-static constexpr const char* kDefaultPath = "/data/vendor/display/.displaymodedefault";
 
 const std::map<int32_t, std::string> DisplayModes::kModeMap = {
     // clang-format off
