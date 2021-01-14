@@ -16,9 +16,9 @@
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-ifneq ($(findstring lineage, $(TARGET_PRODUCT)),)
+#ifneq ($(findstring lineage, $(TARGET_PRODUCT)),)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
-endif
+#endif
 
 # SP-NDK
 PRODUCT_PACKAGES += \
@@ -38,7 +38,6 @@ PRODUCT_PACKAGES += \
 
 # FM radio
 PRODUCT_PACKAGES += \
-    FMRadio \
     libfmjni
 
 # Init
@@ -72,8 +71,8 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl.9610
 
 # Trust HAL
-PRODUCT_PACKAGES += \
-    lineage.trust@1.0-service
+#PRODUCT_PACKAGES += \
+#    lineage.trust@1.0-service
 
 # Keylayout
 PRODUCT_COPY_FILES += \
